@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="./photos/image.png" class="logo" alt="KingOfDeals Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="I Search...." class="search-bar">
+                </li>
+                <li id="accountBtn" style="display:none;"><a href="#" id="accountLink">Account</a></li>
+                <li id="signinBtn"><a href="signin.html" class="signin-btn">Sign In</a></li>
+                <li id="signupBtn"><a href="signup.html" class="signup-btn">Sign Up</a></li>
+                <li><a href="cart.html"><i class="fa fa-cart-plus" style="font-size:36px"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-close" style="font-size:36px"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa fa-navicon" style="font-size:36px"></i>
+        </div>
+    </section>
+    <section class="auth-container">
+        <h2>Sign Up</h2>
+        <form action="javascript:void(0);" method="POST" onsubmit="signUpUser()">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </section>
+
+    <script>
+        // On successful sign up, set login status and redirect to home
+        function signUpUser() {
+            // Assuming successful sign up (you can integrate server-side validation)
+            localStorage.setItem('userLoggedIn', 'true');
+            window.location.href = 'index.html'; // Redirect to home page
+        }
+    </script>
+    <script>
+        //sidebar
+        const bar = document.getElementById('bar');
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
+
+        if (bar) {
+            bar.addEventListener('click', () => { nav.classList.add('active') });
+        }
+        if (close) {
+            close.addEventListener('click', () => { nav.classList.remove('active') });
+        }
+    </script>
+</body>
+
+</html>

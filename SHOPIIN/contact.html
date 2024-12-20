@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingOfDeals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./photos/image.png" class="logo" alt="KingOfDeals Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="I Search...." class="search-bar">
+                </li>
+                <li id="accountBtn" style="display:none;"><a href="#" id="accountLink">Account</a></li>
+                <li id="signinBtn"><a href="signin.html" class="signin-btn">Sign In</a></li>
+                <li id="signupBtn"><a href="signup.html" class="signup-btn">Sign Up</a></li>
+                <li><a href="cart.html"><i class="fa fa-cart-plus" style="font-size:36px"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-close" style="font-size:36px"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa fa-navicon" style="font-size:36px"></i>
+        </div>
+    </section>
+
+    <section id="hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide" style="background-image: url('./photos/image1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('./photos/image2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('./photos/image3.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h4>Contact Us</h4> <!-- Updated h4 text -->
+            <p>Have questions or need help?<br> Reach out to us anytime!</p> <!-- Updated p text -->
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 style="text-transform: uppercase;">Contact Us</h2>
+            <p>We'd love to hear from you! Reach out with any questions or feedback.</p>
+            <div class="contact-form">
+                <form action="javascript:void(0);" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Our Contact Details</h3>
+                <p><i class="fa fa-phone"></i> Phone: +917735510636</p>
+                <p><i class="fa fa-envelope"></i> Email: contact@kingofdeals.com</p>
+                <p><i class="fa fa-map-marker"></i> Address: College Square, Gandarpur, Cuttack, Odisha 753003</p>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section id="register-section">
+        <div class="register-content">
+            <h3>Hurry Up and Register</h3>
+            <p>Don't miss out on exclusive offers! Sign up today.</p>
+            <div class="button-group">
+                <a href="signin.html" class="register-button">Sign In</a>
+                <a href="signup.html" class="register-button">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>SHOP CATEGORIES</h4>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Exclusive Offers</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Track Orders</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>GET THE APP</h4>
+                <div class="app-store-logos">
+                    <a href="YOUR_GOOGLE_PLAY_LINK"><img src="./photos/gp.png" alt="Google Play"></a>
+                    <a href="YOUR_APP_STORE_LINK"><img src="./photos/as.png" alt="App Store"></a>
+                </div>
+            </div>
+    
+            <div class="footer-section footer-terms">
+                <img src="./photos/originall.png" alt="100% Original Guarantee">
+                <p>14 Days Free Return. Shop with Confidence!</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

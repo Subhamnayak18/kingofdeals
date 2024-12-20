@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background-color: #028BA6;
+    color: #222;
+    width: 100%;
+}
+
+/* Navbar Header */
+#header {
+    background-color: #028BA6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow */
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo {
+    width: 150px;
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    margin: 0 12px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #222;
+    /* Text color */
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    transition: color 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #eec61f;
+}
+
+#navbar .search-container {
+    position: relative;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close
+{
+    display: none;
+
+}
+
+.search-bar {
+    border: 2px solid #bbb;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 18px;
+    width: 240px;
+    transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    width: 280px;
+    outline: none;
+    border-color: #eec61f;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('./photos/shopppp/0117-GQ-FERG02-01-Ryan-\ Gosling-01.webp'); /* Your provided image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: top; /* Keeps the image at the bottom right */
+    background-repeat: no-repeat;
+    height: 50vh; /* 90% of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 80px;
+    color: #222;
+}
+
+#hero h1 {
+    font-size: 50px;
+    color: #e0afa0;
+    text-shadow: 1px 1px 0px #bbb, 2px 2px 0px #999;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#hero h4 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+#hero h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Remove the button */
+#hero button {
+    display: none; /* Hide the button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 0 30px;
+        height: 70vh;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
+
+/* Feature Section */
+#feature {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.feature-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.feature-box {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.feature-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.feature-box-text {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #1a3a3a;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow:
+        1px 1px 2px #ddc4dd,
+        2px 2px 5px #ddc4dd,
+        3px 3px 8px #ddc4dd;
+}
+
+.feature-link:hover .feature-box {
+    transform: scale(1.05);
+}
+
+.feature-link:hover .feature-box-text {
+    color: #eec61f;
+    text-shadow:
+        1px 1px 3px #ddc4dd,
+        3px 3px 6px #ddc4dd,
+        4px 4px 10px #ddc4dd;
+}
+
+@media (max-width: 768px) {
+    #feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-link {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/*feature product*/
+#featured-products {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Product Cards */
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 22%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-brand {
+    font-size: 14px;
+    color: #888;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product-rating {
+    color: #ffb400;
+    margin: 5px 0;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #37d629;
+}
+
+
+
+/*footer*/
+.footer {
+    background-color: #0b032d;
+    color: white;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    width: 22%;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #FF5733;
+    /* Accent color */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FF5733;
+}
+
+.app-store-logos img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.app-store-logos {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+.social-media-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #FF5733;
+}
+
+.footer-section.footer-terms {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer-section.footer-terms img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-section.footer-terms img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.footer-section.footer-terms p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*media section*/
+@media (max-width:1060px) {
+    #navbar {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #fff5fd;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0px 0px 10px;
+        transition: 0.3s;
+
+
+    }
+    #navbar.active{
+        right: 0px;
+
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #close
+{
+    display: flex;
+
+}
+    #close
+    {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+    }
+}

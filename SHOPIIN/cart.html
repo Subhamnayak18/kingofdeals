@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingOfDeals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cstyle.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./photos/image.png" class="logo" alt="KingOfDeals Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="I Search...." class="search-bar">
+                </li>
+                <li id="accountBtn" style="display:none;"><a href="#" id="accountLink">Account</a></li>
+                <li id="signinBtn"><a href="signin.html" class="signin-btn">Sign In</a></li>
+                <li id="signupBtn"><a href="signup.html" class="signup-btn">Sign Up</a></li>
+                <li><a href="cart.html"><i class="fa fa-cart-plus" style="font-size:36px"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-close" style="font-size:36px"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa fa-navicon" style="font-size:36px"></i>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <section class="shopping-cart">
+        <h2>Your Cart (4 items)</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="./photos/shopppp/HM1.jpeg" alt="Pi Pizza Oven">
+                        <p>H&M</p>
+                        
+                    </td>
+                    <td>₹659.00</td>
+                    <td>
+                        <button class="quantity-button">-</button>
+                        1
+                        <button class="quantity-button">+</button>
+                    </td>
+                    <td>₹659.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./photos/shopppp/HM2.jpeg" alt="Grill Ultimate Bundle">
+                        <p>H&M</p>
+                        
+                    </td>
+                    <td>₹659.00</td>
+                    <td>
+                        <button class="quantity-button">-</button>
+                        1
+                        <button class="quantity-button">+</button>
+                    </td>
+                    <td>₹659.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./photos/shopppp/HM3.jpeg" alt="Starters (4 pack)">
+                        <p>H&M</p>
+                    </td>
+                    <td>₹659.00</td>
+                    <td>
+                        <button class="quantity-button">-</button>
+                        0
+                        <button class="quantity-button">+</button>
+                    </td>
+                    <td>₹0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./photos/shopppp/HM4.jpeg" alt="Charcoal Grill Pack">
+                        <p>H&M</p>
+                    </td>
+                    <td>₹659.00</td>
+                    <td>
+                        <button class="quantity-button">-</button>
+                        0
+                        <button class="quantity-button">+</button>
+                    </td>
+                    <td>₹0.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-totals">
+            <p>Subtotal: ₹1318.00</p>
+            <p>Sales Tax: ₹102.00</p>
+            <p>Coupon Code: <input type="text" placeholder="Add Coupon"></p>
+            <p>Grand Total: ₹1420.00</p>
+        </div>
+        <button class="checkout-button">Check Out</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>SHOP CATEGORIES</h4>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Exclusive Offers</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Track Orders</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>GET THE APP</h4>
+                <div class="app-store-logos">
+                    <a href="YOUR_GOOGLE_PLAY_LINK"><img src="./photos/gp.png" alt="Google Play"></a>
+                    <a href="YOUR_APP_STORE_LINK"><img src="./photos/as.png" alt="App Store"></a>
+                </div>
+            </div>
+    
+            <div class="footer-section footer-terms">
+                <img src="./photos/originall.png" alt="100% Original Guarantee">
+                <p>14 Days Free Return. Shop with Confidence!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
